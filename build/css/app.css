@@ -375,6 +375,48 @@ h4 {
   justify-content: end;
 }
 
+.boton-amarillo {
+  background-color: #E08709;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: inline-block;
+}
+.boton-amarillo:hover {
+  background-color: #c77808;
+}
+
+.boton-amarillo-block {
+  background-color: #E08709;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: block;
+}
+.boton-amarillo-block:hover {
+  background-color: #c77808;
+}
+
+.boton-verde {
+  background-color: #71B100;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: inline-block;
+}
+.boton-verde:hover {
+  background-color: #619800;
+}
+
 /** UI **/
 .no-webp .inicio {
   background-image: url(../img/header.jpg);
@@ -521,35 +563,28 @@ h4 {
   font-weight: 900;
 }
 
-.boton-amarillo {
-  background-color: #E08709;
-  color: #FFFFFF;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 1rem 3rem;
-  text-align: center;
-  margin-top: 2.5rem;
-  display: block;
-}
-.boton-amarillo:hover {
-  background-color: #c77808;
-}
-
-.boton-verde {
-  background-color: #71B100;
-  color: #FFFFFF;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 1rem 3rem;
-  text-align: center;
-  margin-top: 2.5rem;
-  display: inline-block;
-}
-.boton-verde:hover {
-  background-color: #619800;
-}
-
-.footer {
+.no-webp .imagen-contacto {
   background-image: url(../img/encuentra.jpg);
-  padding: 10rem 0;
+}
+
+.webp .imagen-contacto {
+  background-image: url(../img/encuentra.webp);
+}
+
+.imagen-contacto {
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagen-contacto h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+.imagen-contacto p {
+  font-size: 1.8rem;
+  color: #FFFFFF;
 }
