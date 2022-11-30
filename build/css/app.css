@@ -461,6 +461,7 @@ h4 {
 .footer {
   padding: 2.5rem 0;
   background-color: #333333;
+  margin-bottom: 0;
 }
 .footer .contenido-footer {
   padding-top: 2.5rem;
@@ -634,4 +635,30 @@ h4 {
 }
 .texto-entrada span {
   color: #E08709;
+}
+
+.testimonial {
+  background-color: #71B100;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: #FFFFFF;
+  border-radius: 1rem;
+}
+.testimonial blockquote {
+  padding-left: 5rem;
+  position: relative;
+}
+.testimonial blockquote::before {
+  content: "";
+  background-image: url(../img/comilla.svg);
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 8rem;
+  display: block;
+  position: absolute;
+  left: -2rem;
+}
+.testimonial p {
+  text-align: right;
+  color: #FFFFFF;
 }
