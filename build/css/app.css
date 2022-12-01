@@ -662,3 +662,18 @@ h4 {
   text-align: right;
   color: #FFFFFF;
 }
+
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.texto-nosotros blockquote {
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin: 0;
+  padding-left: 1rem 0 3rem 0;
+}
