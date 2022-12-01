@@ -28,6 +28,29 @@
 
     <main class="contenedor seccion">
         <h1>Contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada3.jpg" alt="Imagen Contacto" loading="lazy">
+        </picture>
+
+        <h2>Llene el formulario de contrato</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Tu Email" id="email">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" placeholder="Tu Telefono" id="telefono">
+            </fieldset>
+        </form>
     </main>
 
     <footer class="footer seccion">
