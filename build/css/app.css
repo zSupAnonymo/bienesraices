@@ -384,9 +384,11 @@ h4 {
   text-align: center;
   margin-top: 2.5rem;
   display: inline-block;
+  border: none;
 }
 .boton-amarillo:hover {
   background-color: #c77808;
+  cursor: pointer;
 }
 
 .boton-amarillo-block {
@@ -398,9 +400,11 @@ h4 {
   text-align: center;
   margin-top: 2.5rem;
   display: block;
+  border: none;
 }
 .boton-amarillo-block:hover {
   background-color: #c77808;
+  cursor: pointer;
 }
 
 .boton-verde {
@@ -412,9 +416,11 @@ h4 {
   text-align: center;
   margin-top: 2.5rem;
   display: inline-block;
+  border: none;
 }
 .boton-verde:hover {
   background-color: #619800;
+  cursor: pointer;
 }
 
 /** UI **/
