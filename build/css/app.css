@@ -367,7 +367,7 @@ h4 {
 }
 
 .contenido-centrado {
-  max-width: 800px;
+  max-width: 80rem;
 }
 
 .alinear-derecha {
@@ -541,7 +541,8 @@ h4 {
 .anuncio h3, .anuncio p {
   margin: 0;
 }
-.anuncio .precio {
+
+.precio {
   color: #71B100;
   font-weight: 700;
   font-size: 3rem;
@@ -551,6 +552,7 @@ h4 {
   display: flex;
   list-style: none;
   padding: 0;
+  max-width: 40rem;
 }
 .iconos-caracteristicas li {
   flex: 1;
