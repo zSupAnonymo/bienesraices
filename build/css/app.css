@@ -480,6 +480,7 @@ h4 {
 .barra {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 3rem;
 }
 @media (min-width: 768px) {
@@ -489,6 +490,9 @@ h4 {
   }
 }
 
+.navegacion {
+  display: none;
+}
 @media (min-width: 768px) {
   .navegacion {
     display: flex;
@@ -510,6 +514,15 @@ h4 {
   .navegacion a:last-of-type {
     margin-right: 0;
   }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu img {
+  width: 5rem;
 }
 
 @media (min-width: 768px) {
