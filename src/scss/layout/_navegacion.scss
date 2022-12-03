@@ -11,10 +11,15 @@
 
 .navegacion {
 
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 3s ease-in-out, opacity 0.5s linear;
+
     @include tablet {
         display: flex;
         align-items: center;
+        opacity: 1;
+        visibility: visible;
     }
 
     a {
@@ -44,4 +49,9 @@
     img {
         width: 5rem;
     }
+}
+
+.mostrar {
+    visibility: visible;
+    opacity: 1;
 }

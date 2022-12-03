@@ -491,12 +491,16 @@ h4 {
 }
 
 .navegacion {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 3s ease-in-out, opacity 0.5s linear;
 }
 @media (min-width: 768px) {
   .navegacion {
     display: flex;
     align-items: center;
+    opacity: 1;
+    visibility: visible;
   }
 }
 .navegacion a {
@@ -523,6 +527,11 @@ h4 {
 }
 .mobile-menu img {
   width: 5rem;
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
