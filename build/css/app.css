@@ -423,6 +423,26 @@ h4 {
   cursor: pointer;
 }
 
+.dark-mode {
+  background-color: #1a1a1a;
+}
+.dark-mode p {
+  color: #FFFFFF;
+}
+.dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4 {
+  color: #e1e1e1;
+}
+.dark-mode .anuncio {
+  background-color: #333333;
+  border: 1px solid #333333;
+}
+.dark-mode .anuncio .precio {
+  color: #71B100;
+}
+.dark-mode .anuncio .iconoprop {
+  filter: invert(100%);
+}
+
 /** UI **/
 .no-webp .inicio {
   background-image: url(../img/header.jpg);
@@ -472,9 +492,38 @@ h4 {
 .footer .contenido-footer {
   padding-top: 2.5rem;
 }
+.footer .navegacion {
+  visibility: visible;
+  opacity: 1;
+}
 .footer .copyright {
   color: #FFFFFF;
   text-align: center;
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .derecha {
+    align-items: flex-end;
+  }
+}
+.derecha .dark-mode-boton {
+  width: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  filter: invert(100%);
+}
+.derecha .dark-mode-boton:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .derecha .dark-mode-boton {
+    margin-top: 0;
+  }
 }
 
 .barra {
@@ -487,6 +536,7 @@ h4 {
   .barra {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
@@ -562,6 +612,7 @@ h4 {
 .anuncio {
   background-color: #eeeeee;
   border: 1px solid #d4d4d4;
+  margin-bottom: 2rem;
 }
 .anuncio .contenido-anuncio {
   padding: 2rem;
