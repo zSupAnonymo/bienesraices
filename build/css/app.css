@@ -442,6 +442,9 @@ h4 {
 .dark-mode .anuncio .iconoprop {
   filter: invert(100%);
 }
+.dark-mode .texto-nosotros blockquote {
+  color: #FFFFFF;
+}
 
 /** UI **/
 .no-webp .inicio {
