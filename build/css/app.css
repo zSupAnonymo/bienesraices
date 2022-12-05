@@ -543,6 +543,7 @@ h4 {
 .navegacion {
   visibility: hidden;
   opacity: 0;
+  height: 0;
   transition: visibility 3s ease-in-out, opacity 0.5s linear;
 }
 @media (min-width: 768px) {
@@ -582,6 +583,7 @@ h4 {
 .mostrar {
   visibility: visible;
   opacity: 1;
+  height: auto;
 }
 
 @media (min-width: 768px) {
