@@ -11,6 +11,23 @@
 
         $titulo = $_POST['titulo'];
         $precio = $_POST['precio'];
+        $descripcion = $_POST['descripcion'];
+        $habitaciones = $_POST['habitaciones'];
+        $wc = $_POST['wc'];
+        $estacionamiento = $_POST['estacionamiento'];
+        $vendedorId = $_POST['vendedor'];
+
+        //insertar en la base de datos
+
+        $query = " INSERT INTO propiedades (titulo, precio, descripcion, habitaciones, wc, estacionamiento, vendedorId ) VALUES ( '$titulo', '$precio', '$descripcion', '$habitaciones', '$wc', '$estacionamiento', '$vendedorId' )";
+
+        // echo $query; Probar si la consulta esta bien realizada
+
+        $resultado = mysqli_query($db, $query);
+
+        if($resultado) {
+            echo "insertado bien";
+        }
     }
 
     require '../../includes/funciones.php'; 
@@ -35,27 +52,27 @@
                 
                 
                 <label for="descripcion">Descripcion:</label>
-                <textarea id="descripcion"></textarea>
+                <textarea id="descripcion" name="descripcion"></textarea>
             </fieldset>
 
             <fieldset>
                 <legend>Informacion Propiedad</legend>
 
                 <label for="habitaciones">Habitaciones:</label>
-                <input type="number" id="habitaciones" placeholder="Ej: 3" min="1" max="9"> 
+                <input type="number" id="habitaciones" name="habitaciones" placeholder="Ej: 3" min="1" max="9"> 
 
                 <label for="wc">Baños:</label>
-                <input type="number" id="wc" placeholder="Ej: 3" min="1" max="9"> 
+                <input type="number" id="wc" name="wc" placeholder="Ej: 3" min="1" max="9"> 
 
                 <label for="estacionamiento">Estacionamiento:</label>
-                <input type="number" id="estacionamiento" placeholder="Ej: 3" min="1" max="9"> 
+                <input type="number" id="estacionamiento" name="estacionamiento" placeholder="Ej: 3" min="1" max="9"> 
 
             </fieldset>
 
             <fieldset>
                 <legend>Vendedor</legend>
 
-                <select>
+                <select name ="vendedor">
                     <option value="1">Juan</option>
                     <option value="2">Karen</option>
                 </select>
