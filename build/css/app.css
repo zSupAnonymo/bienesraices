@@ -819,3 +819,15 @@ h4 {
   margin: 3rem 0 0 0;
   padding-left: 1rem 0 3rem 0;
 }
+
+.alerta {
+  padding: 0.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.alerta.error {
+  background-color: rgb(189, 7, 7);
+}
